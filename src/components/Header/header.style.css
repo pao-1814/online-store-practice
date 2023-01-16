@@ -1,0 +1,79 @@
+p{
+    margin: 0;
+}
+
+.header{
+    background: #110F21;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 162px 0 162px;
+    margin-bottom: 20px;
+}
+
+.header__logo{
+    width: 50px;
+}
+
+.header__buttons-container{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__heart-icon{
+    width: 18px;
+    cursor: pointer;
+}
+
+.header__cart-icon{
+    width: 18px;
+    cursor: pointer;
+}
+
+.header__login-wrapper, .header__user-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.header__link{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+}
+
+.header__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+}
+
+.header__vertical-line{
+    width: 2px;
+    height: 13px;
+    background: #FD7114;
+}
+
+.header__user-icon{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FD7114;
+    background: #DEDEE0;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user-arrow{
+    cursor: pointer;
+}
