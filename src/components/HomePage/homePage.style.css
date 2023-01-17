@@ -5,105 +5,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.homepage__filters-menu-wrapper{
-    width: 860px;
-    height: 61px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
     position: relative;
-    margin-bottom: 15px;
-}
-
-.homepage__search{
-    padding: 10px 0 10px 12px;
-    font-size: 14px;
-    width: 290px;
-    height: 37px;
-    border: 1px solid #DEDEE0;
-    border-radius: 5px;
-    background: #F9FAFB;
-    position: absolute;
-    left: 12px;
-}
-
-.homepage__search::-webkit-input-placeholder { 
-    font-family: FontAwesome;
-    font-weight: normal;
-    overflow: visible;
-    vertical-align: top;
-    color: grey
-}
-
-.homepage__category{
-    position: absolute;
-    top: 12px;
-    left: 340px;
-}
-
-.homepage__category-btn, .homepage__sorting-btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 290px;
-    height: 37px;
-    background: #F9FAFB;
-    border: 1px solid #DEDEE0;
-    border-radius: 5px;
-    padding: 0 12px 0 12px;
-    cursor: pointer;
-}
-.homepage__sorting-btn{
-    width: 182px;
-}
-
-.category-btn-text{
-    color:#707070;
-    font-size: 14px;
-    justify-self: flex-start;
-    font-family: FontAwesome;
-}
-
-.homepage__category-item{
-    display: block;
-    width: 288px;
-    height: 40px;
-    background: white;
-    border: none;
-    padding-left: 37px;
-    text-align: start;
-    cursor: pointer;
-}
-
-.chosen{
-    background: #F0F0F0;
-}
-
-.homepage__category-item:hover{
-    background: #F0F0F0;
-}
-
-.homepage__sorting{
-    position: absolute;
-    left: 660px;
-    top: 12px;
-}
-
-.homepage__categories-list{
-    border: 1px solid #DEDEE0;
-    border-radius: 5px;
+    padding-top: 20px;
 }
 
 .homepage__items-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 860px;
+    margin-bottom: 58px;
+}
+
+.homepage__load-more-btn{
+    background: #148DFD;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
 }
 
 

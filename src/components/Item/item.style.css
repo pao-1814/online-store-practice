@@ -1,5 +1,5 @@
 .homepage-item{
-    width: 209px;
+    width: 207px;
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     box-shadow: 0px 4px 14px rgba(121, 121, 121, 0.0527344);
@@ -9,6 +9,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 14px;
+    margin-right: 8px;
 }
 
 .homepage-item__img{
@@ -20,7 +22,6 @@
 }
 
 .homepage-item__title{
-    font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -32,7 +33,6 @@
 }
 
 .homepage-item__price{
-    font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     sortingOpen: false,
-    sorting: 'Sorting',
+    sorting: '',
 }
 
 export const sortingSlice = createSlice({
@@ -19,7 +19,6 @@ export const sortingSlice = createSlice({
   }
 })
 
-// Action creators are generated for each case reducer function
 export const { setSorting, toggleSorting } = sortingSlice.actions
 export const selectSorting = (state) => state.sorting;
 

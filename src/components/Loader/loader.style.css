@@ -1,0 +1,28 @@
+.loader{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    animation: spin 1.5s linear infinite;
+}
+
+.spin2 {
+    border-bottom-color: #148DFD;
+    border-top-color:#148DFD;
+}
+@keyframes spin {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}

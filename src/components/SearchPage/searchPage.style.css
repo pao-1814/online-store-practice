@@ -1,0 +1,41 @@
+.search-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.search-page__items-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 860px;
+    margin-bottom: 58px;
+}
+
+.search-page__no-results{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.search-page__no-results-title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+
+.search-page__no-results-text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #373738;
+}

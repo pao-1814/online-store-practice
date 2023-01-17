@@ -1,9 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import Api from '../../Api/Api';
 
 const initialState = {
     categoryOpen: false,
-    category: 'Choose Category',
+    category: '',
+    categoriesList: [],
+    loading: false,
 }
+
+export const fetchCategories = createAsyncThunk('category/fetchCategories', async () => {
+    const response = await Api.fetchProducts('products/categories');
+    return response;
+})
 
 export const categoriesSlice = createSlice({
   name: 'category',
@@ -16,6 +24,15 @@ export const categoriesSlice = createSlice({
     toggleCategories: (state) => {
         state.categoryOpen = !state.categoryOpen;
     }
+  },
+  extraReducers(builder){
+    builder.addCase(fetchCategories.pending, (state) => {
+        state.loading = true;
+    });
+    builder.addCase(fetchCategories.fulfilled, (state, action) => {
+        state.loading = false;
+        state.categoriesList = action.payload;
+    });
   }
 })
 
