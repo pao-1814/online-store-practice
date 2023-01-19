@@ -4,6 +4,7 @@ import categoryReducer from '../features/categories/categoriesSlice.js';
 import sortingReducer from '../features/sorting/sortingSlice.js';
 import itemsReducer from '../features/homePageItems/ItemsSlice.js';
 import searchReducer from '../features/search/searchSlice.js';
+import itemPageReducer from '../features/itemPage/itemPageSlice.js'
 
 export const store = configureStore({
     reducer: {
@@ -12,5 +13,6 @@ export const store = configureStore({
         sorting: sortingReducer,
         items: itemsReducer,
         search: searchReducer,
+        itemPage: itemPageReducer,
     },
   })

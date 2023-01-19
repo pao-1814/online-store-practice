@@ -3,13 +3,17 @@ import blankLike from '../../assets/icons/Shape.svg';
 import './item.style.css';
 import { useDispatch } from "react-redux";
 import { likeItem } from "../../features/homePageItems/ItemsSlice";
+import { useNavigate } from "react-router-dom";
 
 export const Item = (props) => {
     const {id, imgUrl, title, price, liked} = props;
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     return(
         <div className="homepage-item">
-            <img className="homepage-item__img" src={imgUrl} alt={title}></img>
+            <div onClick={() => navigate('/products/' + id)} className="homepage-item__img-wrapper">
+                <img className="homepage-item__img" src={imgUrl} alt={title}></img>
+            </div>
             <p className="homepage-item__title">{title}</p>
             <p className="homepage-item__price">${price}</p>
             <div onClick={() => dispatch(likeItem(id))} className="homepage-item__like">

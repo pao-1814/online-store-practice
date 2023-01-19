@@ -58,6 +58,9 @@ export const itemsSlice = createSlice({
     loadMoreItems: (state) => {
         state.page++;
     },
+    updateLikedItems: (state) => {
+        state.likedItems = localStorage.getItem('likedItems') ? JSON.parse(localStorage.getItem('likedItems')) : []
+    }
   },
   extraReducers(builder) {
     builder.addCase(fetchItems.pending, (state) => {
@@ -84,7 +87,7 @@ export const itemsSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { likeItem, loadMoreItems, searchItems } = itemsSlice.actions
+export const { likeItem, loadMoreItems, searchItems, updateLikedItems } = itemsSlice.actions
 export const selectItems = (state) => state.items;
 
 export default itemsSlice.reducer

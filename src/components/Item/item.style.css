@@ -13,12 +13,20 @@
     margin-right: 8px;
 }
 
-.homepage-item__img{
+.homepage-item__img-wrapper{
     height: 147px;
+    width: 201px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.homepage-item__img{
+    max-height: 147px;
     max-width: 201px;
     border-radius: 3px;
-    margin-bottom: 20px;
-    cursor: pointer;
 }
 
 .homepage-item__title{

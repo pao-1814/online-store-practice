@@ -1,0 +1,222 @@
+.item-page{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.item-page__bg{
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    min-height: 90vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-page__wrapper{
+    width: 860px;
+    background: #FFFFFF;
+    padding: 35px 35px 35px 87px;  
+    overflow: auto;  
+}
+
+.item-page__close-btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.item-page__close-btn{
+    fill: #707070;
+    cursor: pointer;
+    transition: ease-in-out all 0.1s;
+    transform: scale(1);
+}
+
+.item-page__close-btn:active{
+    transform: scale(1.05);
+}
+
+.item-page__close-btn:hover{
+    fill: rgb(255, 1, 1);
+}
+
+.item-page__content-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    margin-bottom: 70px;
+}
+
+.item-page__img-wrapper{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #E4E4E4;
+    box-shadow: 0px 4px 14px rgba(121, 121, 121, 0.0527344);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.item-page__img{
+    max-height: 290px;
+    max-width: 290px;
+}
+
+.item-page__title{
+    margin: 0 0 10px 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #373738;
+}
+
+.item-page__description{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+.item-page__price-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 200px;
+}
+
+.item-page__price-title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    color: #373738;
+}
+
+.item-page__price{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #373738;
+}
+
+.item-page__count-wrapper{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.item-page__count{
+    background: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #707070;
+    transition: ease-in-out all 0.1s;
+    transform: scale(1);
+}
+
+.item-page__count:disabled{
+    opacity: 0.3;
+}
+
+.item-page__count:active{
+    transform: scale(1.05);
+}
+
+.item-page__count-value{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.item-page__total-title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #707070;
+}
+
+.item-page__total-value{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #373738;
+    padding-left: 32px;
+}
+
+.item-page__buttons-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.item-page__cart-btn, .item-page__favorites-btn, .item-page__buy-btn{
+    width: 200px;
+    height: 36px;
+    border: 2px solid #FD7114;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FD7114;
+    background: white;
+    cursor: pointer;
+    transition: ease-in-out all 0.1s;
+    transform: scale(1);
+}
+
+.item-page__cart-btn:active, .item-page__favorites-btn:active, .item-page__buy-btn:active{
+    transform: scale(1.02);
+}
+
+.item-page__cart-btn:hover, .item-page__favorites-btn:hover{
+    background: #FD7114;
+    border: 1px solid rgb(235, 231, 231);
+    color: white;
+}
+
+.item-page__buy-btn:hover{
+    background: #bc4b00;
+    border: none;
+}
+
+.item-page__buy-btn{
+    color: white;
+    background: #FD7114;
+}
+
+
+
+
+

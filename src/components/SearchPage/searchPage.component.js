@@ -5,7 +5,7 @@ import { Filters } from "../Filters/filters.component";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import './searchPage.style.css';
-import { fetchSearchItems, searchItems, selectItems } from "../../features/homePageItems/ItemsSlice";
+import { fetchSearchItems, searchItems, selectItems, updateLikedItems } from "../../features/homePageItems/ItemsSlice";
 import { Loader } from "../Loader/loader.component";
 
 export const SearchPage = () =>{
@@ -15,6 +15,7 @@ export const SearchPage = () =>{
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchSearchItems(params.searchStr));
+        dispatch(updateLikedItems());
     }, [params.searchStr]);
     return(
         <div className="search-page">

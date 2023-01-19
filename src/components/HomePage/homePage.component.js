@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory, setCategory, fetchCategories } from "../../features/categories/categoriesSlice";
 import { selectSorting, setSorting } from "../../features/sorting/sortingSlice";
-import { selectItems, fetchItems, loadMoreItems } from "../../features/homePageItems/ItemsSlice";
+import { selectItems, fetchItems, loadMoreItems, updateLikedItems } from "../../features/homePageItems/ItemsSlice";
 import { Item } from "../Item/item.component";
 import { Loader } from "../Loader/loader.component";
 import { Filters } from "../Filters/filters.component";
@@ -23,6 +23,7 @@ export const HomePage = () =>{
             cat: category.toLowerCase(),
             sort: sorting.toLowerCase(),
         }));
+        dispatch(updateLikedItems());
         dispatch(fetchCategories());
     }, [page, category, sorting])
     return(
