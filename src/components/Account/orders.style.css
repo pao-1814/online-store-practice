@@ -1,0 +1,44 @@
+.orders__item{
+    border: 1px solid #ECEEF0;
+    box-shadow: 0px 4px 14px rgba(121, 121, 121, 0.0527344);
+    border-radius: 4px;
+    width: 486px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.orders__item-wrapper{
+    display: flex;
+}
+
+.orders__title{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #707070;
+    min-width: 59px;
+}
+
+.orders__titles-wrapper{
+    margin-right: 15px;
+}
+
+.orders__value{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #373738;
+}
+
+.orders__no-orders{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #101010;
+    margin-bottom: 10px;
+}

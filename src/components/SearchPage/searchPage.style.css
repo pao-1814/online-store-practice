@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     padding-top: 20px;
+    min-height: calc(100vh - 152px);
 }
 
 .search-page__items-wrapper{
@@ -21,7 +22,6 @@
 }
 
 .search-page__no-results-title{
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -32,7 +32,6 @@
 }
 
 .search-page__no-results-text{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;

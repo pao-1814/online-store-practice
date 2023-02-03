@@ -1,0 +1,25 @@
+.account-page__subtitle{
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.edit-account__fields-wrapper{
+    margin-bottom: 50px;
+}
+
+.edit-account__save-btn{
+    width: 362px;
+}
+
+.edit-account__password-label{
+    display: block;
+    width: 350px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #707070;
+}

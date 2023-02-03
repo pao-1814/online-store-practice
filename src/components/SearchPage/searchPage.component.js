@@ -5,16 +5,24 @@ import { Filters } from "../Filters/filters.component";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import './searchPage.style.css';
-import { fetchSearchItems, searchItems, selectItems, updateLikedItems } from "../../features/homePageItems/ItemsSlice";
+import { fetchItems, selectItems } from "../../features/homePageItems/ItemsSlice";
 import { Loader } from "../Loader/loader.component";
+import { CartPopUp } from "../popUps/cartPopUp.component";
+import { selectCart } from "../../features/cart/cartSlice";
+import { updateLikedItems } from "../../features/favourites/favouritesSlice";
 
 export const SearchPage = () =>{
     let params = useParams();
     const itemsArr = useSelector(selectItems).itemsArr;
     const loader = useSelector(selectItems).loading;
+    const popUp = useSelector(selectCart).popUp;
     const dispatch = useDispatch()
     useEffect(() => {
-        dispatch(fetchSearchItems(params.searchStr));
+        dispatch(fetchItems({
+            page: 1,
+            category: '',
+            search: params.searchStr,
+        }));
         dispatch(updateLikedItems());
     }, [params.searchStr]);
     return(
@@ -25,7 +33,7 @@ export const SearchPage = () =>{
             <div className="search-page__items-wrapper">
                 {itemsArr.map((item) => {
                     return(
-                        <Item key={item.id} id={item.id} imgUrl={item.image} title={item.title} price={item.price} liked={item.liked}/>
+                        <Item key={item.id} id={item.id} imgUrl={item.thumbnail} title={item.title} price={item.price} liked={item.liked}/>
                     )
                 })}
             </div>
@@ -41,6 +49,7 @@ export const SearchPage = () =>{
             </div>
              }
             {loader ? <Loader/> : <></>}
+            {popUp.showPopUp && <CartPopUp/>}
         </div>
     )
 }

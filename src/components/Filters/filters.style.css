@@ -16,7 +16,7 @@
 .filters__search{
     padding: 10px 0 10px 12px;
     font-size: 14px;
-    width: 290px;
+    width: 350px;
     height: 37px;
     border: 1px solid #DEDEE0;
     border-radius: 5px;
@@ -37,15 +37,16 @@
 .filters__category{
     position: absolute;
     top: 12px;
-    left: 340px;
+    right: 12px;
     z-index: 1;
+    height: max-content;
 }
 
 .filters__category-btn, .filters__sorting-btn{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 290px;
+    width: 350px;
     height: 37px;
     background: #F9FAFB;
     border: 1px solid #DEDEE0;
@@ -66,7 +67,7 @@
 
 .filters__category-item{
     display: block;
-    width: 288px;
+    width: 350px;
     height: 40px;
     background: white;
     border: none;
@@ -93,4 +94,7 @@
 .filters__categories-list{
     border: 1px solid #DEDEE0;
     border-radius: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+    float:left;
 }

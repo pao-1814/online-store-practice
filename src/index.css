@@ -1,3 +1,8 @@
+*{
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,5 +19,142 @@ code {
 
 #root{
   background: #F8F8F8;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.white-btn, .orange-btn{
+  width: 220px;
+  height: 36px;
+  border: 2px solid #FD7114;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #FD7114;
+  background: white;
+  cursor: pointer;
+  transition: ease-in-out all 0.1s;
+  transform: scale(1);
+}
+
+.white-btn, .orange-btn:active{
+  transform: scale(1.02);
+}
+
+.white-btn:hover{
+  background: #FD7114;
+  border: 1px solid rgb(235, 231, 231);
+  color: white;
+}
+
+.white-btn:disabled, .orange-btn:disabled{
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.orange-btn{
+  color: white;
+  background: #FD7114;
+  margin-bottom: 18px;
+}
+
+.orange-btn:hover{
+  background: #bc4b00;
+  border: none;
+}
+
+.close-btn-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px 20px 0 0;
+}
+
+.close-btn{
+  fill: #707070;
+  cursor: pointer;
+  transition: ease-in-out all 0.1s;
+  transform: scale(1);
+}
+
+.close-btn:active{
+  transform: scale(1.05);
+}
+
+.close-btn:hover{
+  fill: rgb(255, 1, 1);
+}
+
+.input{
+  width: 362px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+  padding: 12px 0 12px 12px;
+  margin-bottom: 5px;
+}
+
+.input-wrapper{
+  margin-bottom: 11px;
+  position: relative;
+  min-height: 67px;
+}
+
+.input-label{
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  background: white;
+  padding: 0 5px 0 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.15px;
+  color: #707070;
+  display: block;
+}
+
+.input::-webkit-input-placeholder{
+  font-weight: 400;
+  overflow: visible;
+  vertical-align: top;
+  color: grey;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+textarea:focus, .input:focus{
+  outline: none;
+  border: 2px solid #393838;
+  border-radius: 4px;
+}
+
+.err-msg{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #F44336;
+  display: block;
+  max-width: 350px;
+}
+
+.invalid{
+  border: 1px solid red;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }

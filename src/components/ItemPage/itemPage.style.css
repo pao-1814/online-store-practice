@@ -20,29 +20,8 @@
 .item-page__wrapper{
     width: 860px;
     background: #FFFFFF;
-    padding: 35px 35px 35px 87px;  
+    padding: 0px 0px 35px 87px;  
     overflow: auto;  
-}
-
-.item-page__close-btn-wrapper{
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-}
-
-.item-page__close-btn{
-    fill: #707070;
-    cursor: pointer;
-    transition: ease-in-out all 0.1s;
-    transform: scale(1);
-}
-
-.item-page__close-btn:active{
-    transform: scale(1.05);
-}
-
-.item-page__close-btn:hover{
-    fill: rgb(255, 1, 1);
 }
 
 .item-page__content-wrapper{
@@ -72,7 +51,6 @@
 
 .item-page__title{
     margin: 0 0 10px 0;
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -81,7 +59,6 @@
 }
 
 .item-page__description{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
@@ -97,7 +74,6 @@
 }
 
 .item-page__price-title{
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
@@ -105,7 +81,6 @@
 }
 
 .item-page__price{
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -146,14 +121,12 @@
 }
 
 .item-page__count-value{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
 }
 
 .item-page__total-title{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
@@ -161,7 +134,6 @@
 }
 
 .item-page__total-value{
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -173,47 +145,6 @@
     display: flex;
     justify-content: space-between;
     width: 95%;
-}
-
-.item-page__cart-btn, .item-page__favorites-btn, .item-page__buy-btn{
-    width: 200px;
-    height: 36px;
-    border: 2px solid #FD7114;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #FD7114;
-    background: white;
-    cursor: pointer;
-    transition: ease-in-out all 0.1s;
-    transform: scale(1);
-}
-
-.item-page__cart-btn:active, .item-page__favorites-btn:active, .item-page__buy-btn:active{
-    transform: scale(1.02);
-}
-
-.item-page__cart-btn:hover, .item-page__favorites-btn:hover{
-    background: #FD7114;
-    border: 1px solid rgb(235, 231, 231);
-    color: white;
-}
-
-.item-page__buy-btn:hover{
-    background: #bc4b00;
-    border: none;
-}
-
-.item-page__buy-btn{
-    color: white;
-    background: #FD7114;
 }
 
 

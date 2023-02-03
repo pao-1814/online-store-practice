@@ -1,0 +1,30 @@
+.favourites__items-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+}
+
+.favourites__no-results-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+
+.favourites__no-results-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #373738;
+    margin-bottom: 30px;
+}
+
+.favourites__no-results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

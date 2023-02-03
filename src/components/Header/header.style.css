@@ -2,6 +2,11 @@ p{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .header{
     background: #110F21;
     width: 100%;
@@ -27,9 +32,34 @@ p{
     cursor: pointer;
 }
 
+.header__cart-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__cart-count{
+    background: #FD7114;
+    border: 1px solid #110F21;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 0.4px;
+    color: #110F21;
+}
+
 .header__cart-icon{
     width: 18px;
-    cursor: pointer;
 }
 
 .header__login-wrapper, .header__user-wrapper{
@@ -46,12 +76,16 @@ p{
     line-height: 18px;
     color: white;
 }
+.header__link:hover{
+    text-decoration: underline;
+}
 
 .header__text{
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: white;
+    max-width: 50px;
 }
 
 .header__vertical-line{
@@ -71,8 +105,79 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .header__user-arrow{
     cursor: pointer;
+}
+
+.header__arrow-wrapper{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.header__user-info-wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 234px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+}
+
+.header__email-wrapper{
+    margin-bottom: 17px;
+}
+
+.header__email-wrapper{
+    padding: 16px 0 0 16px;
+}
+
+.header__user-info-name{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.4px;
+    color: #373738;
+}
+
+.header__user-info-email{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.4px;
+    color: #707070;
+}
+
+.header__user-info-line{
+    border: 1px solid #E4E4E4;
+    width: 100%;
+}
+
+.header__user-info-btn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #373738;
+}
+
+.header__user-info-btn:hover{
+    border-radius: 3px;
+    background: rgb(239, 236, 236)
+}
+
+.logout{
+    color: #F44336;
 }

@@ -1,12 +1,13 @@
 import React from "react";
-import blankLike from '../../assets/icons/Shape.svg';
 import './item.style.css';
-import { useDispatch } from "react-redux";
-import { likeItem } from "../../features/homePageItems/ItemsSlice";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { likeItem, selectFavourites } from "../../features/favourites/favouritesSlice";
 
 export const Item = (props) => {
-    const {id, imgUrl, title, price, liked} = props;
+    const {id, imgUrl, title, price} = props;
+    const likedItems = useSelector(selectFavourites).likedItems
+    const liked = likedItems.includes(id);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     return(
